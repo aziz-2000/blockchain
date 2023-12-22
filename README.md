@@ -9,5 +9,8 @@
 ✅ Execute the Assignment at the required time.<br>
 
 
+🌐 Click this link to visit the project website: http://13.51.235.131/
 
-http://13.51.235.131/
+
+<button onclick="copyCommand()">Copy Command</button>
+
