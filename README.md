@@ -13,5 +13,6 @@
 
 install hardhat 
 <pre><code class="language-css">npm install --save-dev hardhat@2.8.0 @nomiclabs/hardhat-waffle@2.0.1 ethereum-waffle@3.4.0 chai@4.3.4 @nomiclabs/hardhat-ethers@2.0.3 ethers@5.5.2 </code></pre>
+
 	
 
