@@ -14,3 +14,24 @@
 
 <button onclick="copyCommand()">Copy Command</button>
 
+ <script>
+        function copyCommand() {
+            // Command to be copied
+            var commandToCopy = "your command here";
+
+            // Create a temporary textarea element
+            var textarea = document.createElement('textarea');
+            textarea.value = commandToCopy;
+            document.body.appendChild(textarea);
+
+            // Select and copy the text
+            textarea.select();
+            document.execCommand('copy');
+
+            // Remove the textarea
+            document.body.removeChild(textarea);
+
+            // Optionally, provide feedback to the user
+            alert('Command copied to clipboard: ' + commandToCopy);
+        }
+    </script>
