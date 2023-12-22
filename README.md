@@ -11,8 +11,8 @@
 
 🌐 Click this link to visit the project website: http://13.51.235.131/
 
+![image](https://github.com/aziz-2000/blockchain/assets/105892837/042b0df9-9942-4773-badb-2adc2247f6c2)
+install hardhat 
+<pre><code class="language-css"> </code></pre>
+	
 
-<pre><code class="language-css">.some-box {
-	f
-}
-</code></pre>
