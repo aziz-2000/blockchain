@@ -12,62 +12,10 @@
 🌐 Click this link to visit the project website: http://13.51.235.131/
 
 
-<button onclick="copyCommand()">Copy Command</button>
- <style>
-        .code-container {
-            position: relative;
-        }
-
-        .copy-button {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            cursor: pointer;
-            padding: 5px 10px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
-
-<!-- Your blog content goes here -->
-
-<!-- Include the necessary JavaScript for the copy button -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Get all code blocks
-        var codeBlocks = document.querySelectorAll('pre code');
-
-        // Add copy buttons to each code block
-        codeBlocks.forEach(function (codeBlock) {
-            var button = document.createElement('button');
-            button.className = 'copy-button';
-            button.textContent = 'Copy';
-
-            button.addEventListener('click', function () {
-                copyToClipboard(codeBlock.textContent);
-            });
-
-            var codeContainer = codeBlock.parentElement;
-            codeContainer.classList.add('code-container');
-            codeContainer.appendChild(button);
-        });
-
-        // Function to copy text to clipboard
-        function copyToClipboard(text) {
-            var textarea = document.createElement('textarea');
-            textarea.value = text;
-            document.body.appendChild(textarea);
-
-            textarea.select();
-            document.execCommand('copy');
-
-            document.body.removeChild(textarea);
-
-            alert('Code copied to clipboard!');
-        }
-    });
-</script>
+<pre><code class="language-css">.some-box {
+	width: 20px;
+	height: 20px;
+	background: black;
+	margin-bottom: 1.5rem;
+}
+</code></pre>
