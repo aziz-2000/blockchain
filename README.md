@@ -19,10 +19,12 @@ install hardhat :
 <pre><code class="language-css">npx hardhat test </code></pre>
 
 <pre><code
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help	
+npx hardhat compile<br>
+npx hardhat clean<br>
+npx hardhat test<br>
+npx hardhat node<br>
+node scripts/sample-script.js --network sepolia <br>
+npx hardhat help	<br>
  </code></pre>
+
+
