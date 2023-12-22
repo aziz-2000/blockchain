@@ -13,6 +13,8 @@
 
 ![image](https://github.com/aziz-2000/blockchain/assets/105892837/e30e6c0f-5bc2-4b6c-ae2f-06678044ca4f)
 
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+<br>
 install hardhat :
 <pre><code class="language-css">npm install --save-dev hardhat@2.8.0 @nomiclabs/hardhat-waffle@2.0.1 ethereum-waffle@3.4.0 chai@4.3.4 @nomiclabs/hardhat-ethers@2.0.3 ethers@5.5.2 </code></pre>
 
