@@ -18,5 +18,11 @@ install hardhat :
 
 <pre><code class="language-css">npx hardhat test </code></pre>
 
-	
-
+<pre><code
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help	
+ </code></pre>
