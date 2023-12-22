@@ -13,25 +13,61 @@
 
 
 <button onclick="copyCommand()">Copy Command</button>
+ <style>
+        .code-container {
+            position: relative;
+        }
 
- <script>
-        function copyCommand() {
-            // Command to be copied
-            var commandToCopy = "your command here";
+        .copy-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
 
-            // Create a temporary textarea element
+<!-- Your blog content goes here -->
+
+<!-- Include the necessary JavaScript for the copy button -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get all code blocks
+        var codeBlocks = document.querySelectorAll('pre code');
+
+        // Add copy buttons to each code block
+        codeBlocks.forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-button';
+            button.textContent = 'Copy';
+
+            button.addEventListener('click', function () {
+                copyToClipboard(codeBlock.textContent);
+            });
+
+            var codeContainer = codeBlock.parentElement;
+            codeContainer.classList.add('code-container');
+            codeContainer.appendChild(button);
+        });
+
+        // Function to copy text to clipboard
+        function copyToClipboard(text) {
             var textarea = document.createElement('textarea');
-            textarea.value = commandToCopy;
+            textarea.value = text;
             document.body.appendChild(textarea);
 
-            // Select and copy the text
             textarea.select();
             document.execCommand('copy');
 
-            // Remove the textarea
             document.body.removeChild(textarea);
 
-            // Optionally, provide feedback to the user
-            alert('Command copied to clipboard: ' + commandToCopy);
+            alert('Code copied to clipboard!');
         }
-    </script>
+    });
+</script>
