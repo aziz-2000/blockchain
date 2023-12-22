@@ -13,9 +13,6 @@
 
 
 <pre><code class="language-css">.some-box {
-	width: 20px;
-	height: 20px;
-	background: black;
-	margin-bottom: 1.5rem;
+	f
 }
 </code></pre>
